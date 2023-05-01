@@ -51,13 +51,13 @@ function App() {
       <main>
           <ul className="pet-list">{
             /* render Pet components in here */
-
-            /* Here's an example / placeholder Pet component */
+          }
+            {/* Here's an example / placeholder Pet component */}
             <li className="pet">
               <img src={"https://via.placeholder.com/400"} alt={"pet name"} />
               <h4>{"pet name"}</h4>
             </li>
-          }</ul>
+          </ul>
       </main>
     </div>
   );
