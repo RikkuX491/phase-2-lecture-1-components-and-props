@@ -1,3 +1,4 @@
+// Header() is a Component
 function Header() {
   return (
     <header>

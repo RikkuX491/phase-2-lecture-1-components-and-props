@@ -1,8 +1,10 @@
-function Pet() {
+// Pet() is a Component
+// Destructuring {pet} gives us easy access to this prop
+function Pet({pet}) {
   return (
     <li className="pet">
-      <img src={"https://via.placeholder.com/400"} alt={"pet name"} />
-      <h4>{"pet name"}</h4>
+      <img src={pet.image} alt={pet.name} />
+      <h4>{pet.name}</h4>
     </li>
   );
 }

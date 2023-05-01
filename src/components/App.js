@@ -1,6 +1,7 @@
 import Header from "./Header";
 import PetList from "./PetList";
 
+// App() is a Component
 function App() {
 
   const pets = [
@@ -41,10 +42,12 @@ function App() {
     }
   ]
 
+  // The code within this return statement (lines 47 - 51) uses JSX syntax
   return (
     <div className="app">
       <Header />
-      <PetList />
+      {/* pets={pets} -> pets on the left-hand side of the '=' sign is the name of the prop. pets within the {} refers to the pets variable. The value of the pets variable is assigned to be the value of the pets prop */}
+      <PetList pets={pets} />
     </div>
   );
 }

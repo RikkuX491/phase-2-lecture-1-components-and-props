@@ -1,9 +1,16 @@
 import Pet from "./Pet";
 
-function PetList() {
+// PetList() is a Component
+// Destructuring {pets} gives us easy access to this prop
+function PetList({pets}) {
+
+  const petComponents = pets.map(pet => {
+    return <Pet key={pet.id} pet={pet} />
+  })
+
   return (
     <main>
-        <ul className="pet-list">{/* render Pet components in here */}</ul>
+        <ul className="pet-list">{petComponents}</ul>
     </main>
   );
 }
